@@ -330,6 +330,7 @@
         {
             "class": "tab_close_button",
             "content_margin": [7, 7],
+            "layer0.texture": "Theme-Stix/Default/close/close-light.png",
             "layer0.opacity": 1.0,
             "layer0.inner_margin": 0,
         },
@@ -341,27 +342,28 @@
         {
             "class": "tab_close_button",
             "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-            "layer0.texture": "Theme-Stix/Laravel-Project/close/close-green.png",
-        },
-        {
-            "class": "tab_close_button",
-            "parents": [{"class": "tab_control", "attributes": ["!selected"]}], //transient
-            "layer0.texture": "Theme-Stix/Laravel-Project/close/close-light.png",
+            "layer0.texture": "Theme-Stix/Default/close/close-green.png",
         },
         {
             "class": "tab_close_button",
             "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-            "layer0.texture": "Theme-Stix/Laravel-Project/close/close.png",
+            "layer0.texture": "Theme-Stix/Default/close/modify.png", 
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["dirty", "hover"]}],
+            "layer0.texture": "Theme-Stix/Default/close/close.png",
         },
         {
             "class": "tool_tip_control", // Label that show when then mouse is over tab
-            "layer0.tint": [30, 105, 235],
+            "layer0.tint": [60, 60, 60],
             "layer0.opacity": 1.0,
-            "content_margin": [3, 3]
+            "content_margin": [9, 7]
         },
         {
             "class": "tool_tip_label_control",
-            "color": [255, 255, 255, 255]
+            "color": [255, 255, 255, 255],
+            "font.size": 12
         },
     /*--------------------------------------------------------------------------
      *                                SideBar
