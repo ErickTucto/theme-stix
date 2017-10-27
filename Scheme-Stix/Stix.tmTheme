@@ -42,7 +42,8 @@
 				<key>invisibles</key>
 				<string>#1100FF</string>
 				<key>lineHighlight</key>
-				<string>#00000050</string>
+				<string>#2D2D2D</string>
+				<!-- <string>#00000050</string> -->
 				<key>popupCss</key> <!-- Modal go to definition -->
 				<string>
 					html {
@@ -78,9 +79,9 @@
 					}
 				</string>
 				<key>selection</key>
-				<string>#0096882D</string>
+				<string>#00968815</string>
 				<key>selectionBorder</key>
-				<string>#0FEFD5FF</string>
+				<string>#0FEFD5B4</string>
 				<key>shadow</key>
 				<string>#00000010</string>
 			</dict>
