@@ -1,5 +1,174 @@
 [
     /*--------------------------------------------------------------------------
+     *                               Searcher
+     *--------------------------------------------------------------------------
+     */
+        {
+            "class": "panel_control", // Background
+            "layer0.tint": [30, 30, 30],
+            "layer0.opacity": 1.0,
+            "content_margin": [10, 15],
+        },
+        {
+            "class": "button_control", // Right buttons
+            "border_size": 10,
+            "border_color": [200, 0, 200],
+            "content_margin": [10, 6, 10, 6],
+            "min_size": [75, 25],
+            "layer0.tint": [60, 60, 60],
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "button_control",
+            "attributes": ["pressed"],
+        },
+        {
+            "class": "button_control",
+            "attributes": ["pressed", "hover"],
+        },
+        {
+            "class": "button_control",
+            "attributes": ["hover"],
+            "layer0.tint": [10, 10, 10],
+        },
+        {
+            "class": "panel_close_button",
+            "layer0.texture": "Theme-Stix/Default/close/close-dark.png",
+            "layer0.opacity": 0.5,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "panel_close_button",
+            "attributes": ["hover"],
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "icon_button_control", // Left Buttons
+            "content_margin": [10, 10],
+            "layer0.tint": [60, 60, 60],
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["selected"],
+            "layer0.tint": [10, 10, 10, 255],
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["hover"],
+            "layer0.tint": [10, 10, 10],
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["left"],
+            //
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["right"],
+            //
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["left", "right"],
+            //
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["left", "selected"],
+            //
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["right", "selected"],
+            //
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["right", "left", "selected"],
+            //
+        },
+        {
+            "class": "icon_regex", // Regular Expression button
+            "layer0.texture": "Theme-Stix/Default/icons/find_regex.png",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "icon_case", // Case Sensitive button
+            "layer0.texture": "Theme-Stix/Default/icons/find_case.png",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "icon_highlight",
+            "layer0.texture": "Theme-Stix/Default/icons/find_highlight.png",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "icon_in_selection",
+            "layer0.texture": "Theme-Stix/Default/icons/find_inselection.png",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "icon_reverse",
+            "layer0.texture": "Theme-Stix/Default/icons/find_reverse.png",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "icon_whole_word",
+            "layer0.texture": "Theme-Stix/Default/icons/find_wholeword.png",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "icon_wrap",
+            "layer0.texture": "Theme-Stix/Default/icons/find_wrap.png",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "icon_preserve_case",
+            "layer0.texture": "Theme-Stix/Default/icons/replace_preserve_case.png",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "icon_context",
+            "layer0.texture": "Theme-Stix/Default/icons/context.png",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "icon_use_buffer",
+            "layer0.texture": "Theme-Stix/Default/icons/use_buffer.png",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8]
+        },
+        {
+            "class": "text_line_control", // Input of Searcher
+            "layer0.tint": [30, 30, 30],
+            "layer0.opacity": 1.0,
+            // "color_scheme_tint": [45, 45, 45],
+            "color_scheme_tint": [255, 255, 255],
+            "content_margin": [16, 0, 16, 0],
+        },
+        {
+            "class": "dropdown_button_control",
+            "content_margin": [10, 10],
+            "layer0.texture": "Theme-Stix/Default/overflow_menu.png",
+            "layer0.opacity": 1.0,
+            "layer0.inner_margin": [0, 0],
+        },
+        {
+            "class": "dropdown_button_control",
+            "attributes": ["hover"],
+        },
+    /*--------------------------------------------------------------------------
      *                          Autocomplete Menu
      *--------------------------------------------------------------------------
      */
@@ -146,6 +315,7 @@
         },
         {
             "class": "quick_panel_label", // File's name
+            "bg": [255, 0, 0],
             "fg": [255, 255, 255, 255], // text normal
             "match_fg": [15, 239, 213, 255], // Finded word
             "selected_fg": [255, 255, 255, 255], // Selected word
@@ -193,12 +363,12 @@
             "class": "overlay_control", // de Goto y Command Pallete
             "layer0.tint": [60, 60, 60],
             "layer0.opacity": 1.0,
-            "content_margin": [3, 3]
+            "content_margin": [0, 0, 0, 0]
         },
         {
             "class": "puck_control", // Scroll
             "parents": [{"class": "overlay_control"}],
-            "layer0.tint": [30, 30, 30],
+            "layer0.tint": [150, 150, 150],
             "layer0.opacity": 1.0,
             "content_margin": [5, 0],
             "blur": false
@@ -209,6 +379,16 @@
             "layer0.tint": [60, 60, 60],
             "layer0.opacity": 1.0,
             "blur": true
+        },
+        {
+            "class": "text_line_control", // Color of input
+            "parents": [{"class": "overlay_control"}],
+            // "layer0.tint": [45, 45, 45],
+            "layer0.tint": [60, 60, 60],
+            "layer0.opacity": 1.0,
+            // "color_scheme_tint": [45, 45, 45],
+            "color_scheme_tint": [255, 255, 255],
+            "content_margin": [16, 12, 16, 12],
         },
     /*--------------------------------------------------------------------------
      *                                 Tabs
@@ -364,6 +544,11 @@
             "class": "tool_tip_label_control",
             "color": [255, 255, 255, 255],
             "font.size": 12
+        },
+        {
+            "class": "title_label_control",
+            "color": [220, 0, 0],
+            "font.size": 25
         },
     /*--------------------------------------------------------------------------
      *                                SideBar
@@ -663,174 +848,6 @@
             "layer0.tint": [20, 20, 20],
             "layer0.opacity": 1.0,
             "blur": false
-        },
-    /*--------------------------------------------------------------------------
-     *                               Searcher
-     *--------------------------------------------------------------------------
-     */
-        {
-            "class": "panel_control", // Background
-            "layer0.tint": [30, 30, 30],
-            "layer0.opacity": 1.0,
-            "content_margin": [10, 15],
-        },
-        {
-            "class": "button_control", // Right buttons
-            "border_size": 10,
-            "border_color": [200, 0, 200],
-            "content_margin": [10, 6, 10, 6],
-            "min_size": [75, 25],
-            "layer0.tint": [60, 60, 60],
-            "layer0.opacity": 1.0,
-        },
-        {
-            "class": "button_control",
-            "attributes": ["pressed"],
-        },
-        {
-            "class": "button_control",
-            "attributes": ["pressed", "hover"],
-        },
-        {
-            "class": "button_control",
-            "attributes": ["hover"],
-            "layer0.tint": [10, 10, 10],
-        },
-        {
-            "class": "panel_close_button",
-            "layer0.texture": "Theme-Stix/Default/close/close-dark.png",
-            "layer0.opacity": 0.5,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "panel_close_button",
-            "attributes": ["hover"],
-            "layer0.opacity": 1.0,
-        },
-        {
-            "class": "icon_button_control", // Left Buttons
-            "content_margin": [10, 10],
-            "layer0.tint": [60, 60, 60],
-            "layer0.opacity": 1.0,
-        },
-        {
-            "class": "icon_button_control",
-            "attributes": ["selected"],
-            "layer0.tint": [10, 10, 10, 255],
-            "layer0.opacity": 1.0,
-        },
-        {
-            "class": "icon_button_control",
-            "attributes": ["hover"],
-            "layer0.tint": [10, 10, 10],
-        },
-        {
-            "class": "icon_button_control",
-            "attributes": ["left"],
-            //
-        },
-        {
-            "class": "icon_button_control",
-            "attributes": ["right"],
-            //
-        },
-        {
-            "class": "icon_button_control",
-            "attributes": ["left", "right"],
-            //
-        },
-        {
-            "class": "icon_button_control",
-            "attributes": ["left", "selected"],
-            //
-        },
-        {
-            "class": "icon_button_control",
-            "attributes": ["right", "selected"],
-            //
-        },
-        {
-            "class": "icon_button_control",
-            "attributes": ["right", "left", "selected"],
-            //
-        },
-        {
-            "class": "icon_regex", // Regular Expression button
-            "layer0.texture": "Theme-Stix/Default/icons/find_regex.png",
-            "layer0.opacity": 1.0,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "icon_case", // Case Sensitive button
-            "layer0.texture": "Theme-Stix/Default/icons/find_case.png",
-            "layer0.opacity": 1.0,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "icon_highlight",
-            "layer0.texture": "Theme-Stix/Default/icons/find_highlight.png",
-            "layer0.opacity": 1.0,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "icon_in_selection",
-            "layer0.texture": "Theme-Stix/Default/icons/find_inselection.png",
-            "layer0.opacity": 1.0,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "icon_reverse",
-            "layer0.texture": "Theme-Stix/Default/icons/find_reverse.png",
-            "layer0.opacity": 1.0,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "icon_whole_word",
-            "layer0.texture": "Theme-Stix/Default/icons/find_wholeword.png",
-            "layer0.opacity": 1.0,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "icon_wrap",
-            "layer0.texture": "Theme-Stix/Default/icons/find_wrap.png",
-            "layer0.opacity": 1.0,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "icon_preserve_case",
-            "layer0.texture": "Theme-Stix/Default/icons/replace_preserve_case.png",
-            "layer0.opacity": 1.0,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "icon_context",
-            "layer0.texture": "Theme-Stix/Default/icons/context.png",
-            "layer0.opacity": 1.0,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "icon_use_buffer",
-            "layer0.texture": "Theme-Stix/Default/icons/use_buffer.png",
-            "layer0.opacity": 1.0,
-            "content_margin": [8, 8]
-        },
-        {
-            "class": "text_line_control", // Input of Searcher
-            "layer0.opacity": 1.0,
-            "layer0.inner_margin": [20, 5],
-            "tint_index": 1,
-            "content_margin": [11, 7],
-        },
-        {
-            "class": "dropdown_button_control",
-            "content_margin": [10, 10],
-            "layer0.texture": "Theme-Stix/Default/overflow_menu.png",
-            "layer0.opacity": 1.0,
-            "layer0.inner_margin": [0, 0],
-        },
-        {
-            "class": "dropdown_button_control",
-            "attributes": ["hover"],
         },
     /*--------------------------------------------------------------------------
      *                                Editor

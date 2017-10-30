@@ -20,7 +20,6 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<!-- <string>#2D2C29</string> -->
 				<string>#1E1E1E</string>
 				<!-- Begin Guide line lateral -->
 				<key>guide</key>
@@ -34,7 +33,6 @@
 				<string>#0FEFD5</string>
 				<key>findHighlight</key> <!-- After search with searcher -->
 				<string>#0FEFD5</string>
-				<!-- <string>#0FEFD5</string> -->
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 				<key>gutterForeground</key> <!-- Color of numbers of the lines -->
@@ -598,7 +596,11 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#65737e</string>
+				<string>#F0F2F128</string>
+				<key>foreground</key>
+				<!-- <string>#f4645f</string> --> <!-- Color Red -->
+				<!-- <string>#4EA1DF</string> --> <!-- Color Blue -->
+				<string>#C3E88D</string> <!-- Color Green -->
 			</dict>
 		</dict>
 		<dict>
@@ -622,7 +624,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string></string>
+				<string>#FF0004FF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -722,7 +724,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string></string>
+				<string>#0000FFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1076,7 +1078,7 @@
 			</dict>
 		</dict>
 	</array>
-	<key>uuid</key>
-	<string>133d1250-19c6-4565-bc93-b37fd36f7fc9</string>
+	<!-- <key>uuid</key>
+	<string>133d1250-19c6-4565-bc93-b37fd36f7fc9</string> -->
 </dict>
 </plist>
