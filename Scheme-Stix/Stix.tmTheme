@@ -20,7 +20,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#1E1E1E</string>
+                <string>#1E1E1E</string>
 				<!-- Begin Guide line lateral -->
 				<key>guide</key>
 				<string>#80CBC4F0</string>
@@ -68,18 +68,18 @@
 					.type {
 						color: #89DDFF;
 						font-style: italic;
-					}
-					.param {
-						color: #F78C6C;
-					}
-					.current {
-						text-decoration: underline;
-					}
-				</string>
-				<key>selection</key>
-				<string>#00968815</string>
-				<key>selectionBorder</key>
-				<string>#0FEFD5B4</string>
+                    }
+                    .param {
+                        color: #F78C6C;
+                    }
+                    .current {
+                        text-decoration: underline;
+                    }
+                </string>
+                <key>selection</key>
+                <string>#00968815</string>
+                <key>selectionBorder</key>
+                <string>#0FEFD5B4</string>
 				<key>shadow</key>
 				<string>#00000010</string>
 			</dict>
@@ -611,7 +611,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#65737e</string>
+				<string>#C3E88D</string>
 				<key>foreground</key>
 				<string>#000000</string>
 			</dict>
@@ -709,9 +709,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#65737e</string>
+				<string>#546e7a</string>
 				<key>foreground</key>
-				<string>#65737e</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -721,10 +721,12 @@
 			<string>markup.quote</string>
 			<key>settings</key>
 			<dict>
+                <key>background</key>
+                <string>#00000050</string>
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#0000FFFF</string>
+				<string>#FFFFFFFF</string>
 			</dict>
 		</dict>
 		<dict>

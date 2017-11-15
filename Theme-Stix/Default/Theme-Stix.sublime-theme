@@ -153,8 +153,7 @@
             "class": "text_line_control", // Input of Searcher
             "layer0.tint": [30, 30, 30],
             "layer0.opacity": 1.0,
-            // "color_scheme_tint": [45, 45, 45],
-            "color_scheme_tint": [255, 255, 255],
+            "color_scheme_tint": [45, 45, 45],
             "content_margin": [16, 0, 16, 0],
         },
         {
@@ -383,11 +382,9 @@
         {
             "class": "text_line_control", // Color of input
             "parents": [{"class": "overlay_control"}],
-            // "layer0.tint": [45, 45, 45],
-            "layer0.tint": [60, 60, 60],
+            "layer0.tint": [45, 45, 45],
             "layer0.opacity": 1.0,
-            // "color_scheme_tint": [45, 45, 45],
-            "color_scheme_tint": [255, 255, 255],
+            "color_scheme_tint": [45, 45, 45],
             "content_margin": [16, 12, 16, 12],
         },
     /*--------------------------------------------------------------------------
@@ -865,7 +862,7 @@
             "attributes": ["hover"],
             "layer0.opacity": 0.8,
         },
-        {
+        {  
             "class": "fold_button_control",
             "attributes": ["expanded"],
             "layer0.texture": "Theme-Stix/Default/assets/minus.png",
