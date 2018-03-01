@@ -24,6 +24,9 @@
 	|:------------------------------------------------------------------------------------------------------------: |
 	|                                                  Move Folders                                                 |
 
+	> Or you can create symbolic link <br>
+	> ln -s /home/{user}/Downloads/theme-stix/Theme-Stix/ /home/{user}/.config/sublime-text-3/Packages/ <br>
+	> ln -s /home/{user}/Downloads/theme-stix/Scheme-Stix/ /home/{user}/.config/sublime-text-3/Packages/
 
 	**3. Active Theme**
 
@@ -34,7 +37,7 @@
 		"always_show_minimap_viewport": true,
 		"color_scheme": "Packages/Scheme-Stix/Stix.tmTheme",
 		"draw_minimap_border": true,
-		"theme": "Stix - Project_Laravel.sublime-theme" // Any, for example the theme of Laravel
+		"theme": "Theme-Stix.sublime-theme",
 	}
 	```
 
@@ -58,14 +61,9 @@ I use this setting and recommend it
 	"draw_minimap_border": true,
 	"draw_white_space": true,
 	"fade_fold_buttons": false,
-	"font_face": "Ubuntu Mono",
-	"font_size": 13,
+	"font_face": "Ubuntu Mono", // If you have the fonts
+	"font_size": 16,
 	"highlight_line": true,
-	"indent_guide_options":
-	[
-		"draw_normal",
-		"draw_active"
-	],
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
 	"margin": 12,
@@ -75,18 +73,13 @@ I use this setting and recommend it
 		120
 	],
 	"tab_size": 4,
-	"theme": "Stix- Project_Laravel.sublime-theme", // Any, for example the theme of Laravel
+	"theme": "Theme-Stix.sublime-theme",
 	"word_wrap": false
 }
 ```
 
 #### Tasks:
 
-- [X] Create Laravel Theme
 - [X] Terminate Installation Guide
-- [X] Improvement Default Theme
-- [X] Improvement Laravel Theme
-- [X] Improvement PHP Theme
 - [ ] Create Home Page
-- [ ] Create Vuejs theme **coming soon**
 - [ ] Create Video Tutorial **coming soon**
