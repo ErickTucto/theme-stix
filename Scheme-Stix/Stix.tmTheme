@@ -20,7 +20,8 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-                <string>#1E1E1E</string>
+                <!-- <string>#1E1E1E</string> -->
+                <string>#2F343F</string>
 				<!-- Begin Guide line lateral -->
 				<key>guide</key>
 				<string>#80CBC4F0</string>
@@ -40,7 +41,8 @@
 				<key>invisibles</key>
 				<string>#1100FF</string>
 				<key>lineHighlight</key>
-				<string>#2D2D2D</string>
+				<string>#20242b</string>
+				<!-- <string>#2D2D2D</string> -->
 				<!-- <string>#00000050</string> -->
 				<key>popupCss</key> <!-- Modal go to definition -->
 				<string>
